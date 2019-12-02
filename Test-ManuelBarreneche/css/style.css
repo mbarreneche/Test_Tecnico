@@ -1,0 +1,384 @@
+/* RESET */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  color: white;
+  font-family: "Lato", sans-serif;
+  background-attachment: fixed;
+  background-color: blueviolet;
+  background: linear-gradient(0deg, #b77dc1 0%, blueviolet 100%);
+  font-size: 12px;
+}
+
+.navibar  {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  padding: 20px;
+  background-color: black;
+  z-index: 5;
+}
+
+.navibar img {
+  height: 40px;
+  width: 40px;
+}
+.navibar__home-link {
+  margin-right: auto;
+  color: white;
+}
+.navibar__home-link:hover {
+  color: blueviolet;
+}
+.navibar__list {
+  display: flex;
+  flex-direction: row;
+
+}
+.navibar__list2 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 50%;
+}
+.navibar__list__item {
+  margin: 0px 10px;
+}
+.navibar__list__item__link {
+  color: white;
+  font-weight: 400;
+}
+.navibar__list__item__link:hover {
+  color: blueviolet;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 60px 0px;
+}
+
+.presentacion {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.presentacion__arrow-down {
+  position: absolute;
+  bottom: 20px;
+  transition: 1.5s;
+  color: #440A7F;
+}
+.presentacion__arrow-down i {
+  color: #440A7F;
+}
+.presentacion__title {
+  font-weight: 700;
+  font-size: 4em;
+  line-height: 2em;
+}
+.presentacion__subtitle {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.presentacion__logo {
+  width: 80vw;
+  height: auto;
+}
+
+.descripcion {
+  padding: 70px 0px;
+  flex-direction: column;
+}
+.descripcion__text {
+  text-align: justify;
+  font-size: 1.2em;
+}
+.descripcion__text__p {
+  margin-bottom: 20px;
+}
+.descripcion__start-btn {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  max-width: 80%;
+  padding-top: 20px;
+}
+.form__title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.form__group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.form__group__text-label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.form__group__text-field {
+  border-style: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 0.25rem;
+  padding: 5px;
+}
+.form__btn {
+  width: 100%;
+  border-radius: 0.25rem;
+  height: 40px;
+  border-style: none;
+  background-color: #440A7F;
+  color: white;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  padding: 5px;
+  line-height: 1em;
+}
+.form__btn--reset {
+  margin-top: 10px;
+  background-color: black;
+}
+.form__error-msg {
+  color: #fc111d;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+}
+
+
+.clima {
+  display:flex;
+  flex-direction: column;
+}
+
+.botonesclima {
+  display:flex;
+  flex-direction: row;
+  height:50px;
+}
+
+#ciudad {
+  
+  width:400px;
+  margin-right:20px;
+  height:41px;
+}
+#dameclima {
+  padding-top:2px;
+  width:150px;
+  margin-left:20px;
+}
+
+.divclima {
+  width:500px;
+  height:150px;
+  padding-top:40px;
+}
+
+.climap {
+  font-size: 30px;
+  font-weight:bolder;
+  padding-top:15px;
+}
+
+.climape {
+  font-size: 15px;
+  font-weight:bol;
+  padding-top:5px;
+}
+.ciudadesfavoritas {
+  margin-bottom:30px;
+  width:100%;
+}
+
+.listaciudades {
+font-size:20px;
+color:white;
+font-weight:bold;
+margin-top:10px;
+padding-left:40px;
+
+  
+}
+.titulociudades {
+  font-size:40px;
+  color:black;
+  font-weight:bold;
+  text-align:left;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 5px 0px;
+}
+.form-check input {
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+}
+.form-check__label {
+  height: 20px;
+  line-height: 20px;
+}
+.form-check__fp {
+  height: 20px;
+  margin-left: auto;
+}
+.form-check__fp__link {
+  color: #440A7F;
+  font-weight: 400;
+}
+
+.form__not-registered {
+  margin-top: 10px;
+}
+.form__not-registered__link {
+  margin-left: 10px;
+  color: #440A7F;
+}
+
+.btn {
+  border-radius: 0.25rem;
+  height: 40px;
+  border-style: none;
+  background-color: #440A7F;
+  color: white;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grow:hover {
+  transform: scale(1.5);
+}
+
+.point:hover {
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 540px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navibar__list__item__link {
+    font-weight: 700;
+  }
+}
+@media (min-width: 768px) {
+  .descripcion__start-btn {
+    width: 30%;
+  }
+  .presentacion__logo {
+    width: 50vw;
+    height: auto;
+  }
+  
+}
